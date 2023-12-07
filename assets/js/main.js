@@ -11,8 +11,10 @@ const options_div = document.querySelectorAll(".opts");
 const next_button = document.querySelector("#next");
 
 // json lore data
-const data_file = await fetch("../data/data.json");
-const data = await data_file.json();
+var data
+fetch("assets/data/data.json").then(res => {
+    data_file = res.json();
+});
 
 // variables context
 let context = 0;
@@ -44,5 +46,14 @@ const next = () => {
     context = current_opt.idSuiv;
     title_div.innerText = data[context].titre;
     context_div.innerText = data[context].text;
+    if(data[context].image){
+        picture_div.src = data[context].image
+    }
+    option_div.innerHTML = '';
+    data[context].options.forEach(opt => {
+        let op = document.createElement("li");
+        op.classList.add("opts");
+        op.innerText = opt.text;
+    });
   }
 }
