@@ -16,40 +16,26 @@ const main = async () => {
 
   // variables context
   let context = 0;
-  let current_opt = undefined;
-
-  // init
-  const setContext = (context) => {
-    title_div.innerText = data[context].titre;
-    context_div.innerText = data[context].text;
-    if(data[context].image){
-        picture_div.src = data[context].image
-    }
-    option_div.innerHTML = '';
-    data[context].options.forEach(opt => {
-        let op = document.createElement("li");
-        op.classList.add("opts");
-        op.innerText = opt.texte;
-        op.id = opt.idSuiv
-        option_div.appendChild(op);
-    });
-  }
-  setContext(context);
-  
+  let current_opt = undefined; 
 
   // add events
-  for (const i of options_div) {
-    i.addEventListener('click', () => {
-      // click on options
-      // click on opt that already have choosed: unselect all
-      // click on opt choose it then update <current_opt>
-      // click on opt choose it then update <current_opt>
-      // unblur or blur button, deactivate click
-      // on hover, mouse cursor
-    });
+  const addNextEvents = () => {
+    console.log(option_div)
+      for (const i of options_div) {
+        console.log(i)
+        i.addEventListener('click', () => {
+          // click on options
+          // click on opt that already have choosed: unselect all
+          // click on opt choose it then update <current_opt>
+          // click on opt choose it then update <current_opt>
+          // unblur or blur button, deactivate click
+          // on hover, mouse cursor
+          console.log("aa")
+        });
+      }
   }
+  addNextEvents();
   next_button.addEventListener('click', () => {
-    console.log("bruh");
     // click
     // next context
     // if opt not choosed, then button blurred
@@ -57,7 +43,20 @@ const main = async () => {
     // on hover, if opt choosed, cursor
     if(current_opt){
       context = current_opt.idSuiv;
-      setContext(context)
+      title_div.innerText = data[context].titre;
+      context_div.innerText = data[context].text;
+      if(data[context].image){
+        picture_div.src = data[context].image
+      }
+      option_div.innerHTML = '';
+      data[context].options.forEach(opt => {
+        let op = document.createElement("li");
+        op.classList.add("opts");
+        op.innerText = opt.texte;
+        op.id = opt.idSuiv
+        option_div.appendChild(op);
+      });
+      addNextEvents();
     }
   });
 };
