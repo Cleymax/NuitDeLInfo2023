@@ -2,8 +2,8 @@
     { 
         "id" : 0,
         "titre": "INTRODUCTION",
-        "text": "blablabla",
-        "image": "https://blabla.com",
+        "text": "Max Cassenoisette se leva dans sa chambre, prêt pour une journée ordinaire à l'atelier du Père Noël. L'air était rempli de la magie de Noël, avec des jouets en construction et une ambiance festive. Max savoura l'atmosphère joyeuse dans la cuisine avec les autres elfes, mais quelque chose semblait un peu différent sans qu'il puisse mettre le doigt dessus. En sirotant son chocolat chaud, Max réalisa que la journée serait spéciale d'une manière ou d'une autre. Il sentait qu'il allait vivre des moments inattendus qui le feraient voir Noël sous un nouvel angle. Dans cette atmosphère agréable, Max se prépara mentalement pour les événements à venir, prêt à faire face à ce que cette journée particulière lui réservait.",
+        "image": "img/0.png",
         "options": [
         {
           "texte" : "Ouvrir son courrier de la veille.",
@@ -18,8 +18,8 @@
     { 
         "id" : 1,
         "titre": "UNE LETTRE ANONYME",
-        "text": "Parmis tout son courrier Max trouve une étrange lettre anonyme avec un timbre inconnu.",
-        "image": "https://blabla.com",
+        "text": "Parmi tout son courrier, Max trouve une étrange lettre anonyme avec un timbre inconnu. L'enveloppe était ornée d'une écriture mystérieuse, et le cachet semblait scellé avec une énergie étrange. Intrigué, Max hésite un instant avant de décider s'il doit l'ouvrir ou non. La journée qui s'annonçait ordinaire prenait soudain une tournure mystérieuse et prometteuse, et Max se demandait ce que cette lettre énigmatique pourrait révéler. Finalement, il décide de l'ouvrir",
+        "image": "img/1.png",
         "options": [
         {
           "texte" : "Lire le contenu de la lettre.",
@@ -30,8 +30,8 @@
     { 
         "id" : 2,
         "titre": "UNE SILHOUETTE ETRANGE",
-        "text": "En se promenant dans sa forêt qu'il connait sur le bout des doigts Max appercoit au loin une silhouette qui ne lui est pas familière. De quoi peut-il bien s'agir ?",
-        "image": "https://blabla.com",
+        "text": "Se promenant dans sa forêt qu'il connaît sur le bout des doigts, Max aperçoit au loin une silhouette qui ne lui est pas familière. Une forme étrange se dessine parmi les arbres familiers. Max plisse les yeux pour mieux voir, se demandant ce que cela pourrait bien être. Son cœur bat un peu plus fort, mélange d'excitation et d'appréhension alors qu'il s'approche lentement pour percer le mystère qui se cache dans l'ombre des sapins. Que pourrait-il découvrir dans les profondeurs de la forêt, loin des sentiers battus de son quotidien elfique ?",
+        "image": "img/2.png",
         "options": [
         {
           "texte" : "S'approcher.",
@@ -42,8 +42,8 @@
     { 
         "id" : 3,
         "titre": "LA TERRIBLE NOUVELLE",
-        "text": "Quel ne fut pas la stupeur quand Max s'apperçut du désastre auquel il va devoir faire face. Les sapins sont malades et ils ne vont plus pouvoir apporter leur magie qui permet aux rennes de voler. Comment regler ce problème pour que la tournée du Père Noël ai lieu ?",
-        "image": "https://blabla.com",
+        "text": "Quelle ne fut pas la stupeur quand Max s'aperçut du désastre auquel il allait devoir faire face. Les sapins, autrefois majestueux et verdoyants, étaient malades, affligés par une maladie mystérieuse. Leur triste état signifiait qu'ils ne pourraient plus apporter leur magie indispensable, celle qui permettait aux rennes du Père Noël de voler. Max sentit le poids de la responsabilité sur ses épaules elfiques. Comment allait-il résoudre ce problème urgent pour que la tournée du Père Noël puisse avoir lieu ? Un défi inattendu se dressait devant lui, et Max savait que sa créativité et son ingéniosité seraient nécessaires pour restaurer la magie de Noël.",
+        "image": "img/3.png",
         "options": [
         {
           "texte" : "Il faut faire au plus vite !",
@@ -58,8 +58,8 @@
     { 
         "id" : 4,
         "titre": "L'APPEL AU PERE NOEL.",
-        "text": "Mais que fait le Père Noël dans toute cette histoire. Il a beau être toujours très occupé c'est une histoire sérieuse à laquel Max fait face !",
-        "image": "https://blabla.com",
+        "text": "Mais que fait le Père Noël dans toute cette histoire ? Il a beau être toujours très occupé, c'est une situation sérieuse à laquelle Max fait face ! Les sapins malades menacent la magie de Noël, et Max ne sait même pas où trouver le Père Noël. Les étagères de l'atelier résonnent du brouhaha habituel, mais l'absence du Père Noël est palpable. Max se retrouve seul devant ce défi inattendu, se demandant comment il va sauver la magie de Noël sans la présence du chef de l'atelier. La situation devient de plus en plus urgente, et Max réalise qu'il doit trouver une solution par lui-même pour assurer le bon déroulement de la tournée tant attendue.",
+        "image": "img/4.png",
         "options": [
         {
           "texte" : "Essayer d'appeler le Père Noël.",
@@ -74,11 +74,11 @@
     { 
         "id" : 5,
         "titre": "UNE REUNION MAGIQUE",
-        "text": "Max décide d'en parler à tous ses collègues elfes afin de reflechir à se problème ensemble. Dans le chaos et la panique provoqués par son annonce Max voit trois choix s'offrir à lui.",
-        "image": "https://blabla.com",
+        "text": "Max décide d'en parler à tous ses collègues elfes afin de réfléchir à ce problème ensemble. Dans le chaos et la panique provoqués par son annonce, les elfes, habituellement affairés et joyeux, se retrouvent maintenant figés par l'inquiétude. Max, debout au centre de l'atelier, essaie de ramener le calme. Les chuchotements et les exclamations se mêlent dans une cacophonie, mais Max lève haut les mains pour attirer l'attention. \"Écoutez, mes amis !\" crie Max au milieu du tumulte. \"Nous devons travailler ensemble pour trouver une solution. Les sapins malades menacent la magie de Noël, et si nous ne faisons rien, la tournée du Père Noël sera compromise.\" Un silence tendu suit ses paroles, puis les elfes commencent à s'échanger des regards déterminés. Max, avec l'espoir de restaurer l'ordre, guide ses collègues vers un espace où ils peuvent commencer à élaborer un plan pour sauver la magie de Noël. Face à l'incertitude, l'esprit d'équipe des elfes commence à briller, car ils comprennent que la tradition et la joie de Noël dépendent de leur créativité et de leur détermination collective.",
+        "image": "img/5.png",
         "options": [
         {
-          "texte" : "Ecouter Mandarine.",
+          "texte" : "Ecouter Mandarine l'unijambiste.",
           "idSuiv": 8
         },
         {
@@ -94,13 +94,130 @@
     { 
         "id" : 6,
         "titre": "UNE AVENTURE GLACANTE.",
-        "text": "Il va neiger, le Père Noël a répondu à son téléphone ! Il demande à Max de le rejoindre dans son chalet, pour cela il lui faut suivre les pinguins ses voisins, il connaise le chemin.(problème montée des eaux)",
-        "image": "https://blabla.com",
+        "text": "Il va neiger, le Père Noël a répondu à son téléphone ! Le Père Noël, malgré son emploi du temps chargé, a entendu l'appel de Max. Il demande à Max de le rejoindre dans son chalet, et pour cela, il doit suivre les pingouins, ses voisins qui connaissent le chemin. Cependant, une ombre d'inquiétude plane dans l'air. Les pingouins, d'habitude résidents paisibles de la région polaire, semblent nerveux. Max les suit à travers la forêt enneigée, mais le chemin qui était autrefois sec est maintenant partiellement inondé en raison de la montée des eaux provoquée par le réchauffement climatique. Le suspense grandit alors que Max, guidé par les pingouins, doit surmonter des obstacles inattendus. Les eaux tumultueuses représentent un défi imprévu, mais Max persévère avec détermination, conscient que chaque pas le rapproche du chalet du Père Noël.",
+        "image": "img/6.png",
         "options": [
         {
-          "texte" : "",
+          "texte" : "Max a retrouvé le Père Noël.",
           "idSuiv": 10
         }
       ]
+    },
+    { 
+        "id" : 7,
+        "titre": "L'ILE DES BONHOMES DE NEIGE",
+        "text": "Après sa rencontre avec la Mère Noël celle-ci lui indique le chemin à suivre pour rejoindre le Père Noël, pour cela Max va devoir passer par un endroit qu'il n'a pas visité depuis longtemps, l'île des bonhomes de neige. En traversant l'île il l'a trouve différente, comme s'il ne reconnaissait pas le moindre chemin. Les bonhommes de neige, jadis fièrement debout, semblaient fondre et s'affaisser. Leurs sourires joyeux avaient cédé la place à des expressions préoccupées. Max, le cœur lourd, comprit que même ici, où la glace devait régner en maître, le réchauffement climatique laissait son empreinte. Il continua son chemin à travers l'île, observant les signes du changement climatique. Les igloos qui avaient été des refuges sûrs semblaient fragiles, menacés par la fonte progressive de la glace. Les rivières autrefois glacées montraient des signes de dégel prématuré. La morale de cette expérience touchante était claire : le réchauffement climatique ne connaît pas de frontières. Il affecte non seulement les régions chaudes, mais il pénètre également les endroits autrefois glacés et imperturbables.",
+        "image": "img/7.png",
+        "options": [
+        {
+          "texte" : "Max a retrouvé le Père Noël.",
+          "idSuiv": 10
+        }
+      ]
+    },
+    { 
+        "d" : 8,
+        "titre": "MANDARINE L'INCONSCIENTE.",
+        "text": "Mandarine, se tenant devant l'assemblée des elfes du Père Noël, exprima son opinion avec conviction \"Chers collègues elfes, je comprends que nous ressentons tous l'urgence face au réchauffement climatique, mais je dois être honnête avec vous. Je crois fermement que nos actions individuelles ne suffiront pas à résoudre ce problème monumental. Il est temps que nos chefs prennent des mesures concrètes pour sauver la magie de Noël. Certes, planter des arbres, recycler et réduire notre empreinte carbone sont des gestes louables, mais ils ne vont pas inverser la trajectoire actuelle. C'est à nos dirigeants, en l'occurrence le Père Noël et ses conseillers, de prendre des décisions majeures. Nous devons exiger des changements systémiques, des politiques écologiques robustes, et des initiatives qui auront un impact à l'échelle mondiale. Nos chefs ont le pouvoir d'influencer les décisions qui façonneront l'avenir de notre planète. Nous, nous ne servons à rien\"",
+        "image": "img/8.png",
+        "options": [
+        {
+          "texte" : "Alors s'en est vraiment fini de Noël ?",
+          "idSuiv": 13
+        }
+      ]
+    },
+    { 
+        "id" : 9,
+        "titre": "CLEMENTINE, LA VOIX DE LA RAISON.",
+        "text": "Clémentine, l'elfe la plus intelligente du Père Noël, avait une brillante idée pour lutter contre le réchauffement climatique. \"Chers amis elfes du Père Noël, nous sommes les gardiens de la magie de Noël, mais notre magie est menacée par un ennemi invisible et puissant : le réchauffement climatique. Nous devons agir maintenant, ensemble, pour préserver notre joyeuse tradition et la planète qui nous entoure. Regardez autour de vous. Les rennes sont perturbés, la neige fond plus rapidement. Nous ne pouvons plus ignorer les signes du changement climatique. Mais, je crois en notre capacité à faire une différence. Ensemble, nous pouvons être la lueur d'espoir dans cette nuit sombre.\" ",
+        "image": "img/9.png",
+        "options": [
+        {
+          "texte" : "A l'action maintenant !",
+          "idSuiv": 14
+        }
+      ]
+    },
+    { 
+        "id" : 10,
+        "titre": "LE PERE NOEL.",
+        "text": "Max a enfin retrouver le Père Noël ! Le Père Noël, plongé dans la rénovation de ses entrepots, ignorait totalement le problème qui pour lui n'existait pas. Max, conscient que le climatoscepticisme était un obstacle majeur, décida d'aborder la question avec sagesse. Il expliqua patiemment au Père Noël les changements préoccupants dans le climat, les impacts sur l'atelier secret du Père Noël, et comment même la magie de Noël pouvait être affectée par les bouleversements environnementaux. Faisant preuve d'une perspicacité magique, Max utilisa des données scientifiques, des exemples concrets et l'impact observable sur les rennes et les éléments magiques de l'atelier pour convaincre le Père Noël de la réalité du réchauffement climatique. Finalement, le Père Noël réalisa l'importance cruciale de prendre des mesures pour préserver la planète. Ils eurent alors une idée commune...",
+        "image": "img/10.png",
+        "options": [
+        {
+          "texte" : "Mais quelle est donc cette solution ?",
+          "idSuiv": 12
+        }
+      ]
+      
+    },
+    { 
+        "id" : 11,
+        "titre": "UNE PROPOSITION ATYPIQUE.",
+        "text": "Max a soudain une idée de génie, pour que les sapins aillent mieux il faut sensibiliser le monde ! Pourquoi ne pas faire une campagne de pub sur les réseaux sociaux pour toucher le plus de monde ! Max rayonnait d'excitation alors qu'il partageait son idée de génie avec les autres. \"Nous devons sensibiliser le monde entier à l'importance de préserver nos sapins et la magie de Noël face au réchauffement climatique ! Et pour cela, quoi de mieux que les réseaux sociaux ?\" s'exclama-t-il avec enthousiasme. Il faudrait rassembler une équipe d'elfes dynamiques, chacun spécialisé dans les réseaux sociaux, la conception graphique et la communication. Ensemble, ils créerait une campagne de sensibilisation.",
+        "image": "img/11.png",
+        "options": [
+        {
+          "texte" : "Créer cette équipe et tourner la campagne \"Il faut sauver Noël ! \".",
+          "idSuiv": 15
+        }
+      ]
+    },
+    { 
+        "id" : 12,
+        "titre": "UNE FIN INNOVANTE.",
+        "text": "Soucieux de préserver la magie des fêtes, Max et le Père Noël lui-même décidèrent de prendre des mesures concrètes. Ils entreprirent la création de sapins de Noël éco-responsables dans l'atelier secret du Père Noël. En utilisant des matériaux durables, recyclés et respectueux de l'environnement, Max et son équipe d'elfes ingénieux donnèrent naissance à une nouvelle génération de sapins. Ces sapins éco-responsables étaient conçus pour résister aux changements climatiques tout en conservant la magie et la beauté traditionnelles des fêtes. Ils furent obliger de mettre en places cette situation face au potentiel futur de notre planète, ils distribuèrent partout dans le monde ces sapins pour malgré tout sauver tout de même la magie de noël",
+        "image": "img/12.png",
+        "options": [
+        {
+          "texte" : "Ramasser le bout de papier. Il pourrait surement servir en explorant un peu plus ce monde.",
+          "idSuiv": 0
+        }
+      ],
+      "is_end": true
+    },
+    { 
+        "id" : 13,
+        "titre": "C'EST LA FIN DE NOEL...",
+        "text": "La leçon à tirer de cette expérience fut claire : même les créatures magiques ne peuvent ignorer les conséquences de leurs actions, même les plus modestes. Les elfes du Père Noël réalisèrent que chaque geste individuel, chaque choix éco-responsable, était une étincelle qui contribuait à la flamme magique de Noël. Ainsi, les elfes apprirent que sauver Noël nécessite la participation de tous, et que même les plus petits gestes peuvent avoir un impact colossal sur la magie du monde.",
+        "image": "img/13.png",
+        "options": [
+        {
+          "texte" : "Ramasser le bout de papier. Il pourrait surement servir en explorant un peu plus ce monde.",
+          "idSuiv": 0
+        }
+      ],
+      "is_end": true
+    },
+    { 
+        "id" : 14,
+        "titre": "LES ELFES INGENIEUX",
+        "text": "Grâce à l'intelligence de Clémentine, les elfes ont réussi à sauver Noël en effet même si certain des elfes pensaient que l'action individuelle de chaque elfe était vaine, c'est en s'alliant tous ensembles qu'il soignèrent les sapins ! Même si une action isolée peut sembler insignifiante, elle est une partie essentielle du changement global. Comme les gouttes qui, réunies, forment l'océan, les actions individuelles, qu'elles soient petites ou grandes, s'unissent pour créer un impact significatif. Ne sous-estimons jamais le pouvoir cumulatif des gestes respectueux de l'environnement, car chaque choix conscient est une contribution précieuse à la préservation de notre planète. Ensemble, les actions individuelles tissent la trame d'une réponse collective aux défis écologiques, prouvant que même les efforts modestes peuvent créer des vagues de changement positif.",
+        "image": "img/14.png",
+        "options": [
+        {
+          "texte" : "Ramasser le bout de papier. Il pourrait surement servir en explorant un peu plus ce monde.",
+          "idSuiv": 0
+        }
+      ],
+      "is_end": true
+    },
+    { 
+        "id" : 15,
+        "titre": "DES ELFES INFLUENCEURS",
+        "text": "Max et ses amis les elfes décidèrent de tourner une vidéo pour les réseaux sociaux du Père Noël. Dans la vidéo, les elfes illustrèrent comment la fonte des glaces menaçait l'habitat des rennes, la montée des températures altérait la magie de fabrication des jouets, et comment la neige devenait rare dans certaines régions polaires. Ils montrèrent également des solutions pratiques pour réduire l'empreinte carbone, comme le recyclage, l'utilisation d'énergies renouvelables et la promotion d'un mode de vie durable. Tout cela dans le but de sauvé Noël ! Le hashtag #SauvonsLesSapins devint viral, incitant les gens du monde entier à partager leurs propres actions pour lutter contre le réchauffement climatique pendant les fêtes.",
+        "image": "img/15.png",
+        "options": [
+        {
+          "texte" : "Ramasser le bout de papier. Il pourrait surement servir en explorant un peu plus ce monde.",
+          "idSuiv": 0
+        }
+      ],
+      "is_end": true
     }
+    
+    
+    
+    
   ]
