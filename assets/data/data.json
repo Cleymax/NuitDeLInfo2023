@@ -1,0 +1,18 @@
+[
+  { 
+    "id" : 0,
+    "titre": "TITRE",
+    "text": "blablabla",
+    "image": "https://blabla.com",
+    "options": [
+      {
+        "texte" : "option 1",
+        "idSuiv": 1
+      },
+      {
+        "texte" : "option 2",
+        "idSuiv": 2
+      }
+    ]
+  }
+]
