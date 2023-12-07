@@ -1,0 +1,106 @@
+[
+    { 
+        "id" : 0,
+        "titre": "INTRODUCTION",
+        "text": "blablabla",
+        "image": "https://blabla.com",
+        "options": [
+        {
+          "texte" : "Ouvrir son courrier de la veille.",
+          "idSuiv": 1
+        },
+        {
+            "texte" : "Partir se promener",
+            "idSuiv": 2
+          }
+      ]
+    },
+    { 
+        "id" : 1,
+        "titre": "UNE LETTRE ANONYME",
+        "text": "Parmis tout son courrier Max trouve une étrange lettre anonyme avec un timbre inconnu.",
+        "image": "https://blabla.com",
+        "options": [
+        {
+          "texte" : "Lire le contenu de la lettre.",
+          "idSuiv": 3
+        }
+      ]
+    },
+    { 
+        "id" : 2,
+        "titre": "UNE SILHOUETTE ETRANGE",
+        "text": "En se promenant dans sa forêt qu'il connait sur le bout des doigts Max appercoit au loin une silhouette qui ne lui est pas familière. De quoi peut-il bien s'agir ?",
+        "image": "https://blabla.com",
+        "options": [
+        {
+          "texte" : "S'approcher.",
+          "idSuiv": 3
+        }
+      ]
+    },
+    { 
+        "id" : 3,
+        "titre": "LA TERRIBLE NOUVELLE",
+        "text": "Quel ne fut pas la stupeur quand Max s'apperçut du désastre auquel il va devoir faire face. Les sapins sont malades et ils ne vont plus pouvoir apporter leur magie qui permet aux rennes de voler. Comment regler ce problème pour que la tournée du Père Noël ai lieu ?",
+        "image": "https://blabla.com",
+        "options": [
+        {
+          "texte" : "Il faut faire au plus vite !",
+          "idSuiv": 4
+        },
+        {
+            "texte" : "En parler à tous les elfes.",
+            "idSuiv": 5
+          }
+      ]
+    },
+    { 
+        "id" : 4,
+        "titre": "L'APPEL AU PERE NOEL.",
+        "text": "Mais que fait le Père Noël dans toute cette histoire. Il a beau être toujours très occupé c'est une histoire sérieuse à laquel Max fait face !",
+        "image": "https://blabla.com",
+        "options": [
+        {
+          "texte" : "Essayer d'appeler le Père Noël.",
+          "idSuiv": 6
+        },
+        {
+            "texte" : "Aller voir la Mère Noël, c'est elle qui doit savoir le mieux où il est après tout.",
+            "idSuiv": 7
+          }
+      ]
+    },
+    { 
+        "id" : 5,
+        "titre": "UNE REUNION MAGIQUE",
+        "text": "Max décide d'en parler à tous ses collègues elfes afin de reflechir à se problème ensemble. Dans le chaos et la panique provoqués par son annonce Max voit trois choix s'offrir à lui.",
+        "image": "https://blabla.com",
+        "options": [
+        {
+          "texte" : "Ecouter Mandarine.",
+          "idSuiv": 8
+        },
+        {
+          "texte" : "Ecouter Clémentine.",
+          "idSuiv": 9
+        },
+        {
+          "texte" : "Proposer lui même une solution surprenante.",
+          "idSuiv" : 11
+        }
+      ]
+    },
+    { 
+        "id" : 6,
+        "titre": "UNE AVENTURE GLACANTE.",
+        "text": "Il va neiger, le Père Noël a répondu à son téléphone ! Il demande à Max de le rejoindre dans son chalet, pour cela il lui faut suivre les pinguins ses voisins, il connaise le chemin.(problème montée des eaux)",
+        "image": "https://blabla.com",
+        "options": [
+        {
+          "texte" : "",
+          "idSuiv": 10
+        }
+      ]
+    }
+  ]
