@@ -70,6 +70,29 @@ header>nav>ul>li {
     list-style: none;
 }
 
+header nav {
+    display: inline-flex;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label[for="player"] {
+    --text: "ON";
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+label[for="player"]::after {
+    content: var(--text);
+    margin-left: 3px;
+}
+
+
 a {
     text-decoration: none;
 }
@@ -192,7 +215,7 @@ section#intro a {
 
 /* animation skew(0deg, 2deg) to skew(0deg, -2deg) */
 .snow_button {
-    animation: skew 0.3s infinite alternate;
+    animation: skew 0.6s infinite alternate;
 }
 
 
@@ -205,7 +228,7 @@ section#intro a {
 @keyframes skew {
     100% {
 
-        transform: scale(1.5) skew(0deg, 4deg);
+        transform: scale(1.5) skew(0deg, 3deg);
     }
 
     50% {
@@ -213,7 +236,7 @@ section#intro a {
     }
 
     0% {
-        transform: scale(1.5) skew(0deg, -4deg);
+        transform: scale(1.5) skew(0deg, -3deg);
     }
 }
 
