@@ -32,4 +32,9 @@ const next = () => {
   // if opt not choosed, then button blurred
   // on hover, if opt not choosed, default
   // on hover, if opt choosed, cursor
+  if(current_opt){
+    context = current_opt.idSuiv;
+    title_div.innerText = data[context].titre;
+    context_div.innerText = data[context].text;
+  }
 }
