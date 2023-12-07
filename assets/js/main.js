@@ -18,19 +18,22 @@ const main = async () => {
   let context = 0;
   let current_opt = undefined; 
 
+  next_button.disabled = true;
+
   // add events
   const addNextEvents = () => {
     console.log(option_div)
-      for (const i of options_div) {
-        console.log(i)
-        i.addEventListener('click', () => {
+      for (const option of option_div.childNodes) {
+        console.log(option)
+        option.addEventListener('click', () => {
           // click on options
           // click on opt that already have choosed: unselect all
           // click on opt choose it then update <current_opt>
           // click on opt choose it then update <current_opt>
           // unblur or blur button, deactivate click
           // on hover, mouse cursor
-          console.log("aa")
+          current_opt = option.id;
+          next_button.disabled = false;
         });
       }
   }
@@ -41,6 +44,7 @@ const main = async () => {
     // if opt not choosed, then button blurred
     // on hover, if opt not choosed, default
     // on hover, if opt choosed, cursor
+    console.log("next")
     if(current_opt){
       context = current_opt.idSuiv;
       title_div.innerText = data[context].titre;
@@ -57,6 +61,7 @@ const main = async () => {
         option_div.appendChild(op);
       });
       addNextEvents();
+      next_button.disabled = true;
     }
   });
 };
