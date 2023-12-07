@@ -37,7 +37,9 @@ const init = async (data) => {
 
   title_div.innerHTML = title;
   context_div.innerHTML = text;
-  picture_div.src = image;
+  if(image){
+      picture_div.src = image;
+  }
 
   for (const i of opts) {
     const p = document.createElement("li")
