@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
     <div class="snows">
         <div class="snowflake"></div>
         <div class="snowflake"></div>
@@ -71,6 +72,12 @@
             <h1>Mission Sauvetage : Noel Vert</h1>
         </div>
         <nav>
+            <ul>
+                <li>
+                    <label for="player" id="pp" style="--text: 'ON';">🎶</label>
+                    <input type="checkbox" name="Music" id="player">
+                </li>
+            </ul>
             <ul>
                 <li><a href="/a-propos">À propos</a></li>
             </ul>
@@ -139,7 +146,7 @@
 
 
 
-            <h2 style="margin-top: 100px;">Ses missions</h2>
+            <h2>Ses missions</h2>
 
             <ul style="padding-right: 50%; padding-bottom: 40px;">
                 <li>
@@ -183,11 +190,45 @@
             Site web réalisé avec ❤️ pendant la nuit de l'info 2023 par l'équipe <strong>MAX</strong>.
         </p>
         <ul>
-            <li><a href="https://filesender.renater.fr/?s=download&token=48d36f8b-dbf1-4eee-bdee-e1a1c311b5f8">Sujet</a></li>
+            <li><a href="https://filesender.renater.fr/?s=download&token=48d36f8b-dbf1-4eee-bdee-e1a1c311b5f8">Sujet</a>
+            </li>
             <li><a href="https://www.nuitdelinfo.com/">Site de web - Nuit de l'Info</a></li>
         </ul>
         <p>© 2023 - Mission Sauvetage : Noël Vert</p>
     </footer>
 </body>
+
+<script>
+
+    window.addEventListener('load', () => {
+        const music = document.getElementById('pp');
+        const audio = document.querySelector('audio');
+
+        audio.loop = true;
+
+        if (window.localStorage.getItem('music') === 'off') {
+            music.style.setProperty('--text', "'OFF'");
+            audio.pause();
+        } else {
+            music.style.setProperty('--text', "'ON'");
+            audio.play();
+        }
+    });
+
+    const music = document.getElementById('pp');
+    const audio = document.querySelector('audio');
+
+    music.addEventListener('click', () => {
+        if (music.style.getPropertyValue('--text') === "'ON'") {
+            music.style.setProperty('--text', "'OFF'");
+            audio.pause();
+            window.localStorage.setItem('music', 'off');
+        } else {
+            music.style.setProperty('--text', "'ON'");
+            audio.play();
+            window.localStorage.setItem('music', 'on');
+        }
+    });
+</script>
 
 </html>
