@@ -7,14 +7,25 @@ const question_div = document.querySelector("#question");
 const option_list = document.querySelector("#opt");
 const next_button = document.querySelector("#next");
 
-const opt_click = () => {
+// variables context
+let context = 0;
+let current_opt = undefined;
+
+const opt_click = (e) => {
   // click on options
   // click on opt that already have choosed: unselect all
   // click on opt choose it then update <current_opt>
   // click on opt choose it then update <current_opt>
   // unblur or blur button, deactivate click
   // on hover, mouse cursor
-  console.log("bruh");
+  console.log(e);
+  if(e.target.id == current_opt){
+    current_opt = undefined;
+    next_button.disabled = true;
+  }else{
+    current_opt = e.target.id;
+    next_button.disabled = false;
+  }
 }
 
 const init = async (data) => {
@@ -33,6 +44,7 @@ const init = async (data) => {
     p.className = "opts"
     const n = document.createTextNode(i["texte"]);
     p.appendChild(n)
+    p.id = i.idSuiv;
     p.addEventListener('click', opt_click);
     option_list.appendChild(p);
   }
@@ -46,10 +58,7 @@ const main = async () => {
   const data = await data_file.json();
 
   init(data);
-
-  // variables context
-  let context = 0;
-  let current_opt = undefined; 
+  next_button.disabled = true; 
 
   next_button.addEventListener('click', () => {
     // click
@@ -59,7 +68,7 @@ const main = async () => {
     // on hover, if opt choosed, cursor
     console.log("next")
     if(current_opt){
-      context = current_opt.idSuiv;
+      context = current_opt;
       title_div.innerText = data[context].titre;
       context_div.innerText = data[context].text;
       if(data[context].image){
@@ -70,7 +79,7 @@ const main = async () => {
         let op = document.createElement("li");
         op.classList.add("opts");
         op.innerText = opt.texte;
-        op.id = opt.idSuiv
+        op.id = opt.idSuiv;
         option_div.appendChild(op);
       });
     }
