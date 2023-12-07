@@ -1,3 +1,4 @@
+// containers
 const title_div = document.querySelector("#context-title");
 
 const context_div = document.querySelector("#context-ctx");
@@ -9,14 +10,21 @@ const option_div = document.querySelectorAll("#opt");
 const options_div = document.querySelectorAll(".opts");
 const next_button = document.querySelector("#next");
 
+// json lore data
 const data_file = await fetch("../data/data.json");
 const data = await data_file.json();
 
+// variables context
 let context = 0;
 let current_opt = undefined;
 
+// add events
+for (const i of options_div) {
+  i.addEventListener('click', choose);
+}
 next_button.addEventListener('click', next);
 
+// events
 const choose = () => {
   // click on options
   // click on opt that already have choosed: unselect all
