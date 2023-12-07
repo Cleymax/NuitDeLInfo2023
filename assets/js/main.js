@@ -72,7 +72,6 @@ const main = async () => {
         op.id = opt.idSuiv
         option_div.appendChild(op);
       });
-      addNextEvents();
     }
   });
 };
