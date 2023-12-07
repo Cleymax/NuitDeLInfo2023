@@ -6,7 +6,7 @@ const context_div = document.querySelector("#context-ctx");
 const picture_div = document.querySelector("#picture");
 
 const question_div = document.querySelector("#question");
-const option_div = document.querySelectorAll("#opt");
+const option_div = document.querySelector("#opt");
 const options_div = document.querySelectorAll(".opts");
 const next_button = document.querySelector("#next");
 
@@ -54,6 +54,8 @@ const next = () => {
         let op = document.createElement("li");
         op.classList.add("opts");
         op.innerText = opt.text;
+        op.id = opt.idSuiv
+        option_div.appendChild(op);
     });
   }
 }
