@@ -1,7 +1,7 @@
 [
   { 
     "id" : 0,
-    "titre": "TITRE",
+    "titre": "TITRE 0",
     "text": "blablabla",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Strasbourg_capitale_de_No%C3%ABl_grand_sapin_2014_02.jpg",
     "options": [
@@ -14,5 +14,34 @@
         "idSuiv": 2
       }
     ]
+  },
+  { 
+    "id" : 1,
+    "titre": "TITRE 1",
+    "text": "blablabla",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Strasbourg_capitale_de_No%C3%ABl_grand_sapin_2014_02.jpg",
+    "options": [
+      {
+        "texte" : "option 0",
+        "idSuiv": 0
+      },
+      {
+        "texte" : "option 2",
+        "idSuiv": 2
+      }
+    ]
+  },
+  { 
+    "id" : 2,
+    "titre": "TITRE 2",
+    "text": "blablabla",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Strasbourg_capitale_de_No%C3%ABl_grand_sapin_2014_02.jpg",
+    "options": [
+      {
+        "texte" : "option 0",
+        "idSuiv": 0
+      }
+    ],
+    "is_end": true
   }
 ]
