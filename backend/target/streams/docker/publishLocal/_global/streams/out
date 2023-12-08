@@ -1,0 +1,75 @@
+[0m[[0m[0mdebug[0m] [0m[0mExecuting Native docker build --force-rm -t noeljsonrestapi:1.0 .[0m
+[0m[[0m[0mdebug[0m] [0m[0mWorking directory /home/cperrin/Project/Perso/NuitDeLInfo2023/backend/target/docker/stage[0m
+[0m[[0m[31merror[0m] [0m[0m#0 building with "default" instance using docker driver[0m
+[0m[[0m[31merror[0m] [0m[0m#1 [internal] load build definition from Dockerfile[0m
+[0m[[0m[31merror[0m] [0m[0m#1 transferring dockerfile: 1.03kB done[0m
+[0m[[0m[31merror[0m] [0m[0m#1 DONE 0.1s[0m
+[0m[[0m[31merror[0m] [0m[0m#2 [internal] load .dockerignore[0m
+[0m[[0m[31merror[0m] [0m[0m#2 transferring context: 2B done[0m
+[0m[[0m[31merror[0m] [0m[0m#2 DONE 0.1s[0m
+[0m[[0m[31merror[0m] [0m[0m#3 [internal] load metadata for docker.io/library/openjdk:8[0m
+[0m[[0m[31merror[0m] [0m[0m#3 DONE 1.4s[0m
+[0m[[0m[31merror[0m] [0m[0m#4 [mainstage 1/5] FROM docker.io/library/openjdk:8@sha256:86e863cc57215cfb181bd319736d0baf625fe8f150577f9eb58bd937f5452cb8[0m
+[0m[[0m[31merror[0m] [0m[0m#4 resolve docker.io/library/openjdk:8@sha256:86e863cc57215cfb181bd319736d0baf625fe8f150577f9eb58bd937f5452cb8 0.0s done[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:b273004037cc3af245d8e08cfbfa672b93ee7dcb289736c82d0b58936fb71702 7.81kB / 7.81kB done[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:86e863cc57215cfb181bd319736d0baf625fe8f150577f9eb58bd937f5452cb8 1.04kB / 1.04kB done[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:3af2ac94130765b73fc8f1b42ffc04f77996ed8210c297fcfa28ca880ff0a217 1.79kB / 1.79kB done[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:52a8c426d30b691c4f7e8c4b438901ddeb82ff80d4540d5bbd49986376d85cc9 0B / 210B 0.1s[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:8754a66e005039a091c5ad0319f055be393c7123717b1f6fee8647c338ff3ceb 0B / 105.92MB 0.1s[0m
+[0m[[0m[31merror[0m] [0m[0m#4 ...[0m
+[0m[[0m[31merror[0m] [0m[0m#5 [internal] load build context[0m
+[0m[[0m[31merror[0m] [0m[0m#5 transferring context: 25.21MB 0.2s done[0m
+[0m[[0m[31merror[0m] [0m[0m#5 DONE 0.2s[0m
+[0m[[0m[31merror[0m] [0m[0m#4 [mainstage 1/5] FROM docker.io/library/openjdk:8@sha256:86e863cc57215cfb181bd319736d0baf625fe8f150577f9eb58bd937f5452cb8[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:52a8c426d30b691c4f7e8c4b438901ddeb82ff80d4540d5bbd49986376d85cc9 210B / 210B 0.5s done[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:8754a66e005039a091c5ad0319f055be393c7123717b1f6fee8647c338ff3ceb 6.29MB / 105.92MB 0.7s[0m
+[0m[[0m[31merror[0m] [0m[0m#4 extracting sha256:52a8c426d30b691c4f7e8c4b438901ddeb82ff80d4540d5bbd49986376d85cc9 done[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:8754a66e005039a091c5ad0319f055be393c7123717b1f6fee8647c338ff3ceb 12.58MB / 105.92MB 1.1s[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:8754a66e005039a091c5ad0319f055be393c7123717b1f6fee8647c338ff3ceb 18.87MB / 105.92MB 1.5s[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:8754a66e005039a091c5ad0319f055be393c7123717b1f6fee8647c338ff3ceb 27.26MB / 105.92MB 2.0s[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:8754a66e005039a091c5ad0319f055be393c7123717b1f6fee8647c338ff3ceb 33.55MB / 105.92MB 2.4s[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:8754a66e005039a091c5ad0319f055be393c7123717b1f6fee8647c338ff3ceb 40.89MB / 105.92MB 2.8s[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:8754a66e005039a091c5ad0319f055be393c7123717b1f6fee8647c338ff3ceb 48.23MB / 105.92MB 3.2s[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:8754a66e005039a091c5ad0319f055be393c7123717b1f6fee8647c338ff3ceb 54.53MB / 105.92MB 3.6s[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:8754a66e005039a091c5ad0319f055be393c7123717b1f6fee8647c338ff3ceb 62.91MB / 105.92MB 4.1s[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:8754a66e005039a091c5ad0319f055be393c7123717b1f6fee8647c338ff3ceb 70.25MB / 105.92MB 4.5s[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:8754a66e005039a091c5ad0319f055be393c7123717b1f6fee8647c338ff3ceb 76.55MB / 105.92MB 4.9s[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:8754a66e005039a091c5ad0319f055be393c7123717b1f6fee8647c338ff3ceb 82.84MB / 105.92MB 5.3s[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:8754a66e005039a091c5ad0319f055be393c7123717b1f6fee8647c338ff3ceb 91.23MB / 105.92MB 5.8s[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:8754a66e005039a091c5ad0319f055be393c7123717b1f6fee8647c338ff3ceb 98.57MB / 105.92MB 6.2s[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:8754a66e005039a091c5ad0319f055be393c7123717b1f6fee8647c338ff3ceb 104.86MB / 105.92MB 6.6s[0m
+[0m[[0m[31merror[0m] [0m[0m#4 sha256:8754a66e005039a091c5ad0319f055be393c7123717b1f6fee8647c338ff3ceb 105.92MB / 105.92MB 6.7s done[0m
+[0m[[0m[31merror[0m] [0m[0m#4 extracting sha256:8754a66e005039a091c5ad0319f055be393c7123717b1f6fee8647c338ff3ceb[0m
+[0m[[0m[31merror[0m] [0m[0m#4 extracting sha256:8754a66e005039a091c5ad0319f055be393c7123717b1f6fee8647c338ff3ceb 1.5s done[0m
+[0m[[0m[31merror[0m] [0m[0m#4 DONE 8.4s[0m
+[0m[[0m[31merror[0m] [0m[0m#6 [stage0 2/7] WORKDIR /opt/docker[0m
+[0m[[0m[31merror[0m] [0m[0m#6 DONE 0.7s[0m
+[0m[[0m[31merror[0m] [0m[0m#7 [mainstage 2/5] RUN id -u demiourgos728 1>/dev/null 2>&1 || (( getent group 0 1>/dev/null 2>&1 || ( type groupadd 1>/dev/null 2>&1 && groupadd -g 0 root || addgroup -g 0 -S root )) && ( type useradd 1>/dev/null 2>&1 && useradd --system --create-home --uid 1001 --gid 0 demiourgos728 || adduser -S -u 1001 -G root demiourgos728 ))[0m
+[0m[[0m[31merror[0m] [0m[0m#7 DONE 0.8s[0m
+[0m[[0m[31merror[0m] [0m[0m#8 [stage0 3/7] COPY 2/opt /2/opt[0m
+[0m[[0m[31merror[0m] [0m[0m#8 DONE 0.1s[0m
+[0m[[0m[31merror[0m] [0m[0m#9 [stage0 4/7] COPY 4/opt /4/opt[0m
+[0m[[0m[31merror[0m] [0m[0m#9 ...[0m
+[0m[[0m[31merror[0m] [0m[0m#10 [mainstage 3/5] WORKDIR /opt/docker[0m
+[0m[[0m[31merror[0m] [0m[0m#10 DONE 1.4s[0m
+[0m[[0m[31merror[0m] [0m[0m#9 [stage0 4/7] COPY 4/opt /4/opt[0m
+[0m[[0m[31merror[0m] [0m[0m#9 DONE 1.9s[0m
+[0m[[0m[31merror[0m] [0m[0m#11 [stage0 5/7] RUN ["chmod", "-R", "u=rX,g=rX", "/2/opt/docker"][0m
+[0m[[0m[31merror[0m] [0m[0m#11 DONE 0.8s[0m
+[0m[[0m[31merror[0m] [0m[0m#12 [stage0 6/7] RUN ["chmod", "-R", "u=rX,g=rX", "/4/opt/docker"][0m
+[0m[[0m[31merror[0m] [0m[0m#12 DONE 0.3s[0m
+[0m[[0m[31merror[0m] [0m[0m#13 [stage0 7/7] RUN ["chmod", "u+x,g+x", "/4/opt/docker/bin/noeljsonrestapi"][0m
+[0m[[0m[31merror[0m] [0m[0m#13 DONE 0.3s[0m
+[0m[[0m[31merror[0m] [0m[0m#14 [mainstage 4/5] COPY --from=stage0 --chown=demiourgos728:root /2/opt/docker /opt/docker[0m
+[0m[[0m[31merror[0m] [0m[0m#14 DONE 0.1s[0m
+[0m[[0m[31merror[0m] [0m[0m#15 [mainstage 5/5] COPY --from=stage0 --chown=demiourgos728:root /4/opt/docker /opt/docker[0m
+[0m[[0m[31merror[0m] [0m[0m#15 DONE 0.1s[0m
+[0m[[0m[31merror[0m] [0m[0m#16 exporting to image[0m
+[0m[[0m[31merror[0m] [0m[0m#16 exporting layers[0m
+[0m[[0m[31merror[0m] [0m[0m#16 exporting layers 0.2s done[0m
+[0m[[0m[31merror[0m] [0m[0m#16 writing image sha256:90375947ae027f80513fb67263828c552eb6114adfb1ff324d4076fb667cd8d7 done[0m
+[0m[[0m[31merror[0m] [0m[0m#16 naming to docker.io/library/noeljsonrestapi:1.0 done[0m
+[0m[[0m[31merror[0m] [0m[0m#16 DONE 0.2s[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate image(s) (labeled "snp-multi-stage-id=baff68ff-3338-455e-a959-fa679c06921b") [0m
+[0m[[0m[0minfo[0m] [0m[0mTotal reclaimed space: 0B[0m
+[0m[[0m[0minfo[0m] [0m[0mBuilt image noeljsonrestapi with tags [1.0][0m

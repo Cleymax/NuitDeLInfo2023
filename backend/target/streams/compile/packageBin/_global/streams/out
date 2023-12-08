@@ -1,0 +1,19 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/cperrin/Project/Perso/NuitDeLInfo2023/backend/target/scala-2.13/noeljsonrestapi_2.13-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	data.json[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cperrin/Project/Perso/NuitDeLInfo2023/backend/target/scala-2.13/classes/data.json[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Step.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cperrin/Project/Perso/NuitDeLInfo2023/backend/target/scala-2.13/classes/Step.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Step$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cperrin/Project/Perso/NuitDeLInfo2023/backend/target/scala-2.13/classes/Step$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StepOption.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cperrin/Project/Perso/NuitDeLInfo2023/backend/target/scala-2.13/classes/StepOption.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StepOption$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cperrin/Project/Perso/NuitDeLInfo2023/backend/target/scala-2.13/classes/StepOption$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RestApi$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cperrin/Project/Perso/NuitDeLInfo2023/backend/target/scala-2.13/classes/RestApi$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RestApi.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cperrin/Project/Perso/NuitDeLInfo2023/backend/target/scala-2.13/classes/RestApi.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RestApi$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cperrin/Project/Perso/NuitDeLInfo2023/backend/target/scala-2.13/classes/RestApi$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
