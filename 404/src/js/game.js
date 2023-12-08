@@ -360,8 +360,8 @@ class GameScene extends Phaser.Scene {
 
 var config = {
   type: Phaser.AUTO,
-  width: window.innerWidth / 3.0, // Utilisez la largeur de la fenêtre
-  height: window.innerHeight * 1.7,
+  width: "34vw", // Utilisez la largeur de la fenêtre
+  height: "170vh",
   backgroundColor: "#ff0000",
   // width: "70%",
   // height: "140%",
