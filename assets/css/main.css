@@ -34,9 +34,12 @@ main{
 .opts{
     background-color: #DF2E38;
     border-radius: 10px;
-    padding: 10px 70px;
+    padding: 10px;
     color: #F0FEF3;
     list-style: None;
+    cursor: pointer;
+    width: 400px;
+    text-align: center;
 }
 
 #picture{
