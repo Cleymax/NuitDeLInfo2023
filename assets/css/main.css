@@ -1,5 +1,6 @@
 body{
     background-image: url("../images/background.png");
+    background-size: 100%;
     background-repeat: no-repeat;
     color: #8A2127;
     font-family: Roboto;
@@ -63,11 +64,9 @@ main{
 }
 
 #next{
-    background-color: #5D9C59;
     border-radius: 10px;
     padding: 10px 70px;
     border: none;
-    color: #F0FEF3;;
 }
 
 .content{
@@ -94,4 +93,14 @@ header{
 
 #secret{
     z-index: 0;
+}
+
+.desactive_next{
+    background-color: #7b9479;
+    color: #c3ccc0;
+}
+
+.active_next{
+    background-color: #5D9C59;
+    color: #F0FEF3;
 }
