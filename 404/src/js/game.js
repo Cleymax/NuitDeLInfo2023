@@ -34,7 +34,7 @@ class GameScene extends Phaser.Scene {
     this.menuWin = this.add.group();
     this.imageGroup = this.add.group();
     this.load.image("background", "./assets/whiteBackground2.png");
-    this.load.image("backgroundM", "./assets/whiteBackground2.jpg");
+    this.load.image("backgroundM", "./assets/background.jpg");
     var rect = this.add
       .rectangle(MAP_MARGIN, MAP_MARGIN, MAP_WIDTH, 250, 0x000000)
       .setOrigin(0, 0);
@@ -60,10 +60,10 @@ class GameScene extends Phaser.Scene {
 
   create() {
     map = new Map(this);
-    this.add
-      .image(0, 0, "backgroundM")
-      .setOrigin(0, 0)
-      .setDisplaySize(window.innerWidth, window.innerHeight);
+    // this.add
+    //   .image(0, 0, "backgroundM")
+    //   .setOrigin(0, 0)
+    //   .setDisplaySize(window.innerWidth, window.innerHeight);
     this.add.image(10, 10, "background").setOrigin(0, 0);
     ps = new PieceSet(this);
     map.mapDrawer();
@@ -152,7 +152,7 @@ class GameScene extends Phaser.Scene {
     winLetters = this.add.text(
       MENU_WIN_WIDTH / 2 - 20,
       MENU_WIN_Y + 10,
-      "Félicitation vous \navez perdu votre temps ! ",
+      "Félicitation vous \navez perdu votre temps ! \n"+"("+score+" Kg C02 non émie )",
       { font: "bold 25px Geneva", color: "black" }
     );
     tryAgnLetters = this.add.text(
@@ -194,7 +194,7 @@ class GameScene extends Phaser.Scene {
     gameOverLetters = this.add.text(
       MENU_GAMEOVER_WIDTH / 2 - 20,
       MENU_GAMEOVER_Y + 10,
-      "Game Over",
+      "Game Over  \n"+"("+score+" Kg C02 non émie )",
       { font: "bold 25px Geneva", color: "black" }
     );
     tryAgnLetters = this.add.text(
@@ -337,7 +337,7 @@ class GameScene extends Phaser.Scene {
       level++;
       frameInterval -= 30;
     }
-    score -= 10;
+    score -= 40;
 
     if (score <= 0) {
       score = 0;
@@ -352,11 +352,12 @@ class GameScene extends Phaser.Scene {
 
 var config = {
   type: Phaser.AUTO,
-  width: window.innerWidth, // Utilisez la largeur de la fenêtre
+  width: window.innerWidth / 3.7, // Utilisez la largeur de la fenêtre
   height: window.innerHeight,
   backgroundColor: "#ff0000",
-  width: "70%",
-  height: "140%",
+  // width: "70%",
+  // height: "140%",
+  height: "139%",
   scale: {
     mode: Phaser.Scale.FIT,
     autoCenter: Phaser.Scale.CENTER_BOTH,
