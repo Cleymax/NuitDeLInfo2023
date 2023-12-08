@@ -32,7 +32,8 @@ const secretInput = document.getElementById("secret");
 const secretcheck = document.getElementById("check-secret");
 
 secretcheck.addEventListener("click", () => {
-    if(secretInput.value == "Danse enchanté des noix"){
-        alert("GG t'as trouvé le secret !")
+    if(secretInput.value == "Danse enchantée des noix"){
+        console.log("gg");
+        window.location.href = "assets/data/world.zip";
     }
 })
