@@ -2,7 +2,8 @@ let cursors;
 
 let devArrayText;
 let scoreText;
-let levelText;
+let yearText;
+let goalText;
 let nextPieceImage;
 let gameOverLetters;
 let tryAgnLetters;
@@ -15,8 +16,10 @@ let actualFrameInterval = null;
 let map = null;
 let ps = null;
 let combos = 0;
-let score = 0;
+let score = 404;
 let level = 0;
+let year = 2023;
+const goal = 0;
 let gameOver = false;
 
 class GameScene extends Phaser.Scene {
@@ -41,13 +44,13 @@ class GameScene extends Phaser.Scene {
     this.load.image("yellow", "./assets/yellow.png");
     this.load.image("green", "./assets/green.png");
 
-    this.load.image("orangeTile", "./assets/orangeTile.jpg");
+    this.load.image("solarTile", "./assets/solarTile.jpg");
     this.load.image("redTile", "./assets/redTile.jpg");
     this.load.image("purpleTile", "./assets/purpleTile.jpg");
-    this.load.image("blueTile", "./assets/blueTile.jpg");
+    this.load.image("eolTile", "./assets/eolTile.jpg");
     this.load.image("darkBlueTile", "./assets/darkBlueTile.jpg");
     this.load.image("yellowTile", "./assets/yellowTile.jpg");
-    this.load.image("greenTile", "./assets/greenTile.jpg");
+    this.load.image("recycleTile", "./assets/recycleTile.jpg");
     this.load.image("grayTile", "./assets/grayTile.jpg");
   }
 
@@ -60,7 +63,7 @@ class GameScene extends Phaser.Scene {
     cursors = this.input.keyboard.createCursorKeys();
 
     this.drawGui();
-    this.drawDeveloperMap();
+    this.drawDeveloperMap(); //matrice des position
 
     this.frame();
   }
@@ -80,7 +83,7 @@ class GameScene extends Phaser.Scene {
 
       this.downCicle();
       map.comboVerify();
-      devArrayText.setText(map.getMap());
+      devArrayText.setText(map.getMap()); //va avec la matrice
       map.mapDrawer(this);
       this.frame();
     }, frameInterval);
@@ -168,8 +171,9 @@ class GameScene extends Phaser.Scene {
 
     frameInterval = 300;
     combos = 0;
-    score = 0;
+    score = 404;
     level = 0;
+    year = 2023;
     gameOver = false;
 
     map = null;
@@ -202,16 +206,26 @@ class GameScene extends Phaser.Scene {
       .setOrigin(0, 0);
     guiRect.setDepth(12);
     this.addNextPieceImage(ps.next_piece_name);
-    levelText = this.add.text(150, 80, "Level: " + level, {
+    yearText = this.add.text(
+      150,
+      80,
+      "Année : " + (year + level) + " (level " + level + " )",
+      {
+        font: "bold 20px Geneva",
+        color: "white",
+      }
+    );
+    scoreText = this.add.text(150, 120, "Kg C02 Actuelle : " + score, {
       font: "bold 20px Geneva",
       color: "white",
     });
-    scoreText = this.add.text(150, 120, "Score: " + score, {
+    goalText = this.add.text(150, 160, "Objectif : " + goal /*+ " Kg C02"*/, {
       font: "bold 20px Geneva",
       color: "white",
     });
-    levelText.setDepth(12);
+    yearText.setDepth(12);
     scoreText.setDepth(12);
+    goalText.setDepth(12);
 
     instructions = this.add.text(
       50,
@@ -235,10 +249,11 @@ class GameScene extends Phaser.Scene {
       level++;
       frameInterval -= 30;
     }
-    score += 100;
+    score -= 10;
 
-    levelText.setText("Level: " + level);
-    scoreText.setText("Score: " + score);
+    yearText.setText("Year: " + (year + level) + " (level " + level + " ");
+    scoreText.setText("Kg C02 Actuelle : " + score);
+    goalText.setText("Objectif : " + goal);
   }
 }
 
