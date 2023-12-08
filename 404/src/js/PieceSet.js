@@ -37,17 +37,17 @@ class PieceSet {
       case "blue":
         return "eolTile";
       case "dark_blue":
-        return "darkBlueTile";
+        return "lightTile";
       case "green":
         return "recycleTile";
       case "purple":
-        return "purpleTile";
+        return "bikeTile";
       case "red":
-        return "redTile";
+        return "fuelTile";
       case "orange":
-        return "solarTile";
+        return "sunTile";
       case "yellow":
-        return "yellowTile";
+        return "plantTile";
     }
   }
 

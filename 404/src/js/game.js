@@ -46,19 +46,22 @@ class GameScene extends Phaser.Scene {
     this.load.image("yellow", "./assets/yellow.png");
     this.load.image("green", "./assets/green.png");
 
-    this.load.image("solarTile", "./assets/solarTile.jpg");
-    this.load.image("redTile", "./assets/redTile.jpg");
-    this.load.image("purpleTile", "./assets/purpleTile.jpg");
+    this.load.image("sunTile", "./assets/sunTile.jpg");
+    this.load.image("fuelTile", "./assets/fuelTile.jpg");
+    this.load.image("bikeTile", "./assets/bikeTile.jpg");
     this.load.image("eolTile", "./assets/eolTile.jpg");
-    this.load.image("darkBlueTile", "./assets/darkBlueTile.jpg");
-    this.load.image("yellowTile", "./assets/yellowTile.jpg");
+    this.load.image("lightTile", "./assets/lightTile.jpg");
+    this.load.image("plantTile", "./assets/plantTile.jpg");
     this.load.image("recycleTile", "./assets/recycleTile.jpg");
     this.load.image("grayTile", "./assets/grayTile.jpg");
   }
 
   create() {
     map = new Map(this);
-    this.add.image(0, 0, "backgroundM").setOrigin(0, 0);
+    this.add
+      .image(0, 0, "backgroundM")
+      .setOrigin(0, 0)
+      .setDisplaySize(window.innerWidth, window.innerHeight);
     this.add.image(10, 10, "background").setOrigin(0, 0);
     ps = new PieceSet(this);
     map.mapDrawer();
@@ -66,7 +69,7 @@ class GameScene extends Phaser.Scene {
     cursors = this.input.keyboard.createCursorKeys();
 
     this.drawGui();
-    this.drawDeveloperMap(); //matrice des position
+    //this.drawDeveloperMap(); //matrice des position
 
     this.frame();
   }
@@ -86,7 +89,7 @@ class GameScene extends Phaser.Scene {
 
       this.downCicle();
       map.comboVerify();
-      devArrayText.setText(map.getMap()); //va avec la matrice
+      //devArrayText.setText(map.getMap()); //va avec la matrice
       map.mapDrawer(this);
       this.frame();
     }, frameInterval);
@@ -267,8 +270,11 @@ class GameScene extends Phaser.Scene {
 
 var config = {
   type: Phaser.AUTO,
-  width: "150%",
-  height: "180%",
+  width: window.innerWidth, // Utilisez la largeur de la fenêtre
+  height: window.innerHeight,
+  backgroundColor: "#ff0000",
+  // width: "150%",
+  // height: "180%",
   scale: {
     mode: Phaser.Scale.FIT,
     autoCenter: Phaser.Scale.CENTER_BOTH,
