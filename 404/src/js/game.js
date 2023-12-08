@@ -33,29 +33,29 @@ class GameScene extends Phaser.Scene {
     this.menuGameOver = this.add.group();
     this.menuWin = this.add.group();
     this.imageGroup = this.add.group();
-    this.load.image("background", "./assets/whiteBackground2.png");
-    this.load.image("backgroundM", "./assets/background.jpg");
+    this.load.image("background", "/404/assets/whiteBackground2.png");
+    this.load.image("backgroundM", "/404/assets/background.jpg");
     var rect = this.add
       .rectangle(MAP_MARGIN, MAP_MARGIN, MAP_WIDTH, 250, 0x000000)
       .setOrigin(0, 0);
     rect.setDepth(10);
 
-    this.load.image("orange", "./assets/orange.png");
-    this.load.image("red", "./assets/red.png");
-    this.load.image("purple", "./assets/purple.png");
-    this.load.image("blue", "./assets/blue.png");
-    this.load.image("dark_blue", "./assets/dark_blue.png");
-    this.load.image("yellow", "./assets/yellow.png");
-    this.load.image("green", "./assets/green.png");
+    this.load.image("orange", "/404/assets/orange.png");
+    this.load.image("red", "/404/assets/red.png");
+    this.load.image("purple", "/404/assets/purple.png");
+    this.load.image("blue", "/404/assets/blue.png");
+    this.load.image("dark_blue", "/404/assets/dark_blue.png");
+    this.load.image("yellow", "/404/assets/yellow.png");
+    this.load.image("green", "/404/assets/green.png");
 
-    this.load.image("sunTile", "./assets/sunTile.jpg");
-    this.load.image("fuelTile", "./assets/fuelTile.jpg");
-    this.load.image("bikeTile", "./assets/bikeTile.jpg");
-    this.load.image("eolTile", "./assets/eolTile.jpg");
-    this.load.image("lightTile", "./assets/lightTile.jpg");
-    this.load.image("plantTile", "./assets/plantTile.jpg");
-    this.load.image("recycleTile", "./assets/recycleTile.jpg");
-    this.load.image("grayTile", "./assets/grayTile.jpg");
+    this.load.image("sunTile", "/404/assets/sunTile.jpg");
+    this.load.image("fuelTile", "/404/assets/fuelTile.jpg");
+    this.load.image("bikeTile", "/404/assets/bikeTile.jpg");
+    this.load.image("eolTile", "/404/assets/eolTile.jpg");
+    this.load.image("lightTile", "/404/assets/lightTile.jpg");
+    this.load.image("plantTile", "/404/assets/plantTile.jpg");
+    this.load.image("recycleTile", "/404/assets/recycleTile.jpg");
+    this.load.image("grayTile", "/404/assets/grayTile.jpg");
   }
 
   create() {
