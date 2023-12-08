@@ -94,7 +94,6 @@ const newData = (data) => {
     s.addEventListener("click", () => {
       var c = document.createElement("p");
       c.innerText = "le code secret est : ";
-      console.log(current_opt)
       switch (current_opt) {
         case "12":
           c.innerText += "Danse * * *";

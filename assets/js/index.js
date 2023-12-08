@@ -33,6 +33,6 @@ const secretcheck = document.getElementById("check-secret");
 
 secretcheck.addEventListener("click", () => {
     if(secretInput.value == "Danse enchanté des noix"){
-        alert("GG t'a trouvé le secret !")
+        alert("GG t'as trouvé le secret !")
     }
 })
