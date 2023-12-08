@@ -42,6 +42,13 @@ const opt_click = (e) => {
     e.target.classList.add("selected_opt");
     next_button.disabled = false;
   }
+  if(current_opt == undefined){
+    next_button.classList.add("desactive_next")
+    next_button.classList.remove("active_next")
+  }else{
+    next_button.classList.remove("desactive_next")
+    next_button.classList.add("active_next")
+  }
 }
 
 const newData = (data) => {

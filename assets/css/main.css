@@ -56,11 +56,9 @@ main{
 }
 
 #next{
-    background-color: #5D9C59;
     border-radius: 10px;
     padding: 10px 70px;
     border: none;
-    color: #F0FEF3;;
 }
 
 .content{
@@ -82,4 +80,14 @@ header{
 
 #context-title{
     text-align: center;
+}
+
+.desactive_next{
+    background-color: #7b9479;
+    color: #c3ccc0;
+}
+
+.active_next{
+    background-color: #5D9C59;
+    color: #F0FEF3;
 }
