@@ -31,11 +31,15 @@ const opt_click = (e) => {
   // click on opt choose it then update <current_opt>
   // unblur or blur button, deactivate click
   // on hover, mouse cursor
+  option_list.childNodes.forEach(child => {
+    child.classList.remove("selected_opt");
+  });
   if(e.target.id == current_opt){
     current_opt = undefined;
     next_button.disabled = true;
   } else {
     current_opt = e.target.id;
+    e.target.classList.add("selected_opt");
     next_button.disabled = false;
   }
 }
