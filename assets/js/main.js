@@ -11,6 +11,19 @@ const next_button = document.querySelector("#next");
 let context = 0;
 let current_opt = undefined;
 
+const next = (data) => {
+  let opt = undefined;
+  for (const i of data) {
+    if(i["idSuiv"] == current_opt) {
+      opt = i;
+    }
+  }
+
+  if (opt) {
+    newData(opt);
+  }
+}
+
 const opt_click = (e) => {
   // click on options
   // click on opt that already have choosed: unselect all
@@ -18,22 +31,20 @@ const opt_click = (e) => {
   // click on opt choose it then update <current_opt>
   // unblur or blur button, deactivate click
   // on hover, mouse cursor
-  console.log(e);
   if(e.target.id == current_opt){
     current_opt = undefined;
     next_button.disabled = true;
-  }else{
+  } else {
     current_opt = e.target.id;
     next_button.disabled = false;
   }
 }
 
-const init = async (data) => {
-  const data_first = data[0];
-  const title = data_first["titre"];
-  const text = data_first["text"];
-  const image = data_first["image"];
-  const opts = data_first["options"];
+const newData = (data) => {
+  const title = data["titre"];
+  const text = data["text"];
+  const image = data["image"];
+  const opts = data["options"];
 
   title_div.innerHTML = title;
   context_div.innerHTML = text;
@@ -52,6 +63,10 @@ const init = async (data) => {
   }
 }
 
+const init = (data) => {
+  newData(data[0]);
+}
+
 // containers
 const main = async () => {
 
@@ -63,28 +78,7 @@ const main = async () => {
   next_button.disabled = true; 
 
   next_button.addEventListener('click', () => {
-    // click
-    // next context
-    // if opt not choosed, then button blurred
-    // on hover, if opt not choosed, default
-    // on hover, if opt choosed, cursor
-    console.log("next")
-    if(current_opt){
-      context = current_opt;
-      title_div.innerText = data[context].titre;
-      context_div.innerText = data[context].text;
-      if(data[context].image){
-        picture_div.src = data[context].image
-      }
-      option_div.innerHTML = '';
-      data[context].options.forEach(opt => {
-        let op = document.createElement("li");
-        op.classList.add("opts");
-        op.innerText = opt.texte;
-        op.id = opt.idSuiv;
-        option_div.appendChild(op);
-      });
-    }
+    next(data);
   });
 };
 
