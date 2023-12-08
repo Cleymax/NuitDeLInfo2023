@@ -13,7 +13,6 @@ let current_opt = undefined;
 
 const next = (data) => {
   let opt = undefined;
-  console.log(data)
   for (const i of data) {
     if(i["id"] == current_opt) {
       opt = i;
@@ -42,6 +41,7 @@ const opt_click = (e) => {
 }
 
 const newData = (data) => {
+    console.log(data)
   const title = data["titre"];
   const text = data["text"];
   const image = data["image"];
@@ -53,6 +53,8 @@ const newData = (data) => {
       picture_div.src = image;
   }
 
+  option_list.innerHTML = '';
+
   for (const i of opts) {
     const p = document.createElement("li")
     p.className = "opts"
@@ -61,6 +63,17 @@ const newData = (data) => {
     p.id = i.idSuiv;
     p.addEventListener('click', opt_click);
     option_list.appendChild(p);
+  }
+
+  if(data.is_end){
+    next_button.innerText = "Retour à l'accueil";
+    next_button.disabled = false;
+    next_button.addEventListener("click", () => {
+        window.location.href = "/";
+    })
+  }else{
+    current_opt = undefined;
+    next_button.disabled = true;
   }
 }
 
