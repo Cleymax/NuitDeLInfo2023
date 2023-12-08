@@ -16,11 +16,12 @@ let actualFrameInterval = null;
 let map = null;
 let ps = null;
 let combos = 0;
-let score = 404;
+let score = 15;
 let level = 0;
 let year = 2023;
 const goal = 0;
 let gameOver = false;
+let win = false;
 
 class GameScene extends Phaser.Scene {
   constructor() {
@@ -31,6 +32,7 @@ class GameScene extends Phaser.Scene {
     this.menuGameOver = this.add.group();
     this.imageGroup = this.add.group();
     this.load.image("background", "./assets/whiteBackground2.png");
+    this.load.image("backgroundM", "./assets/whiteBackground2.jpg");
     var rect = this.add
       .rectangle(MAP_MARGIN, MAP_MARGIN, MAP_WIDTH, 250, 0x000000)
       .setOrigin(0, 0);
@@ -56,6 +58,7 @@ class GameScene extends Phaser.Scene {
 
   create() {
     map = new Map(this);
+    this.add.image(0, 0, "backgroundM").setOrigin(0, 0);
     this.add.image(10, 10, "background").setOrigin(0, 0);
     ps = new PieceSet(this);
     map.mapDrawer();
@@ -116,7 +119,7 @@ class GameScene extends Phaser.Scene {
   isGameOver() {
     for (var i = 0; i < map.xArrayLength; i++) {
       var value = map.getMapPosition(4, i);
-      if (value == 3) {
+      if (value == 3 || win == true) {
         gameOver = true;
         this.drawGameOverScreen();
         return true;
@@ -250,6 +253,11 @@ class GameScene extends Phaser.Scene {
       frameInterval -= 30;
     }
     score -= 10;
+
+    if (score < 0) {
+      score = 0;
+      win = true;
+    }
 
     yearText.setText("Year: " + (year + level) + " (level " + level + " ");
     scoreText.setText("Kg C02 Actuelle : " + score);
