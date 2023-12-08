@@ -10,6 +10,7 @@ body{
 main{
     display: flex;
     justify-content: space-around;
+    padding: 0 5%;
 }
 #context-title{
     font-size: 48px;
@@ -43,7 +44,8 @@ main{
 }
 
 .selected_opt{
-    background-color: #8A2BE2;
+    background-color: #87181c;
+    transition: all ease .3s;
 }
 
 #picture{
@@ -67,9 +69,9 @@ main{
 }
 
 header{
-    padding-top: 20px;
     display: flex;
     justify-content: space-between;
+    padding: 20px 5% 0 5%;
 }
 
 #logoNDL, #logoRAC {
