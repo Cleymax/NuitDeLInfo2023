@@ -1,0 +1,87 @@
+body{
+    background-image: url("../images/background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #8A2127;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5%;
+}
+#context-title{
+    font-size: 48px;
+}
+
+#context-ctx{
+    font-size: 23px;
+    margin-right: 5%;
+    text-align: justify;
+}
+
+#question{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#opt{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opts{
+    background-color: #DF2E38;
+    border-radius: 10px;
+    padding: 10px;
+    color: #F0FEF3;
+    list-style: None;
+    cursor: pointer;
+    width: 400px;
+    text-align: center;
+}
+
+.selected_opt{
+    background-color: #87181c;
+    transition: all ease .3s;
+}
+
+#picture{
+    border-radius: 45px;
+    height: 40rem;
+    width: auto;
+}
+
+#next{
+    background-color: #5D9C59;
+    border-radius: 10px;
+    padding: 10px 70px;
+    border: none;
+    color: #F0FEF3;;
+}
+
+.content{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5% 0 5%;
+}
+
+#logoNDL, #logoRAC {
+    height: 150px;
+    width: auto;
+}
+
+#context-title{
+    text-align: center;
+}
