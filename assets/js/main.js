@@ -82,6 +82,39 @@ const newData = (data) => {
         window.location.href = "/";
     })
     question_div.style.display = "none";
+    var s = document.createElement("img");
+    s.id = "secret";
+    s.src = data.secret;
+    s.style.position = "absolute"
+    s.style.width = "auto";
+    s.style.height = Math.floor((Math.random() * 200) + 100).toString() + "px";
+    s.style.rotate = Math.floor(Math.random() * 360).toString() + "deg";
+    s.style.top = Math.floor((Math.random() * window.innerHeight * 0.8) + (window.innerHeight * 0.1)).toString() + "px";
+    s.style.left = Math.floor((Math.random() * window.innerWidth * 0.8) + (window.innerWidth * 0.1)).toString() + "px";
+    s.addEventListener("click", () => {
+      var c = document.createElement("p");
+      c.innerText = "le code secret est : ";
+      switch (current_opt) {
+        case "12":
+          c.innerText += "Danse * * *";
+          break;
+        case "13":
+          c.innerText += "* enchantée * *";
+          break;
+        case "14":
+          c.innerText += "* * des *";
+          break;
+        case "15":
+          c.innerText += "* * * noix";
+          break;
+        default:
+          break;
+      }
+      c.innerText += "\nVous devriez essayer de trouver les autres fin pour rassembler tous les morceaux."
+      s.style.display = "none";
+      document.getElementById("code-secret").appendChild(c)
+    })
+    document.getElementById("main").appendChild(s);
   }else{
     current_opt = undefined;
     next_button.disabled = true;

@@ -15,17 +15,20 @@ main{
 }
 #context-title{
     font-size: 48px;
+    z-index: 1;
 }
 
 #context-ctx{
     font-size: 23px;
     margin-right: 5%;
     text-align: justify;
+    z-index: 1;
 }
 
 #question{
     font-size: 48px;
     font-weight: 700;
+    z-index: 1;
 }
 
 #opt{
@@ -33,6 +36,7 @@ main{
     gap: 10px;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
 }
 
 .opts{
@@ -44,6 +48,7 @@ main{
     cursor: pointer;
     width: 400px;
     text-align: center;
+    z-index: 1;
 }
 
 .selected_opt{
@@ -55,6 +60,7 @@ main{
     border-radius: 45px;
     height: 40rem;
     width: auto;
+    z-index: -1;
 }
 
 #next{
@@ -73,6 +79,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 20px 5% 0 5%;
+    z-index: 11;
 }
 
 #logoNDL, #logoRAC {
@@ -82,6 +89,10 @@ header{
 
 #context-title{
     text-align: center;
+}
+
+#secret{
+    z-index: 0;
 }
 
 .desactive_next{
