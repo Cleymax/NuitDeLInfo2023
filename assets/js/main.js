@@ -13,8 +13,9 @@ let current_opt = undefined;
 
 const next = (data) => {
   let opt = undefined;
+  console.log(data)
   for (const i of data) {
-    if(i["idSuiv"] == current_opt) {
+    if(i["id"] == current_opt) {
       opt = i;
     }
   }
