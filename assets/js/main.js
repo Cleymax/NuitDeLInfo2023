@@ -30,7 +30,7 @@ const init = async (data) => {
 
   for (const i of opts) {
     const p = document.createElement("li")
-    p.className = "opt"
+    p.className = "opts"
     const n = document.createTextNode(i["texte"]);
     p.appendChild(n)
     p.addEventListener('click', opt_click);
