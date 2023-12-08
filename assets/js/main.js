@@ -71,6 +71,7 @@ const newData = (data) => {
     next_button.addEventListener("click", () => {
         window.location.href = "/";
     })
+    question_div.style.display = "none";
   }else{
     current_opt = undefined;
     next_button.disabled = true;
