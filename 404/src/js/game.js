@@ -17,7 +17,7 @@ let actualFrameInterval = null;
 let map = null;
 let ps = null;
 let combos = 0;
-let score = 15;
+let score = 404;
 let level = 0;
 let year = 2023;
 const goal = 0;
@@ -153,13 +153,13 @@ class GameScene extends Phaser.Scene {
       MENU_WIN_WIDTH / 2 - 20,
       MENU_WIN_Y + 10,
       "Félicitation vous \navez perdu votre temps ! ",
-      { font: "bold 35px Geneva", color: "black" }
+      { font: "bold 25px Geneva", color: "black" }
     );
     tryAgnLetters = this.add.text(
       MENU_WIN_WIDTH / 2,
       MENU_WIN_Y + 80,
       "Voulez vous continuez \na perdre votre temps?",
-      { font: "bold 25px Geneva", color: "black" }
+      { font: "bold 15px Geneva", color: "black" }
     );
     backgroundMenu = this.add
       .rectangle(
@@ -180,7 +180,7 @@ class GameScene extends Phaser.Scene {
     this.menuWin.add(winLetters);
 
     tryAgnLetters.setInteractive({ useHandCursor: true });
-    tryAgnLetters.on("pointerdown", () => this.restart());
+    tryAgnLetters.on("pointerdown", () => this.nextLevel());
     // tryAgnLetters.on('pointerover', () => this.restart() );
     winLetters.setDepth(12);
     tryAgnLetters.setDepth(12);
@@ -195,13 +195,13 @@ class GameScene extends Phaser.Scene {
       MENU_GAMEOVER_WIDTH / 2 - 20,
       MENU_GAMEOVER_Y + 10,
       "Game Over",
-      { font: "bold 35px Geneva", color: "black" }
+      { font: "bold 25px Geneva", color: "black" }
     );
     tryAgnLetters = this.add.text(
       MENU_GAMEOVER_WIDTH / 2,
       MENU_GAMEOVER_Y + 80,
       "Try Again",
-      { font: "bold 25px Geneva", color: "black" }
+      { font: "bold 15px Geneva", color: "black" }
     );
     backgroundMenu = this.add
       .rectangle(
@@ -228,6 +228,28 @@ class GameScene extends Phaser.Scene {
     tryAgnLetters.setDepth(12);
   }
 
+  nextLevel() {
+    this.menuWin.clear(true);
+
+    frameInterval = 300;
+    combos = 0;
+    score = 404;
+    level = level+1;
+    year = year + 1;
+    gameOver = false;
+
+    map = null;
+    map = new Map(this);
+    ps = new PieceSet(this);
+
+    yearText.setText("Year: " + (year + level) + " (level " + level + " ");
+    scoreText.setText("Kg C02 Actuelle : " + score);
+    goalText.setText("Objectif : " + goal);
+
+
+    this.frame();
+  }
+
   restart() {
     this.menuGameOver.clear(true);
 
@@ -241,6 +263,10 @@ class GameScene extends Phaser.Scene {
     map = null;
     map = new Map(this);
     ps = new PieceSet(this);
+
+    yearText.setText("Year: " + (year + level) + " (level " + level + " ");
+    scoreText.setText("Kg C02 Actuelle : " + score);
+    goalText.setText("Objectif : " + goal);
     this.frame();
   }
 
@@ -300,7 +326,7 @@ class GameScene extends Phaser.Scene {
 
   drawDeveloperMap() {
     devArrayText = this.add.text(DEV_X, DEV_Y + 250, map.getMap(), {
-      font: "bold 25px Geneva",
+      font: "bold 15px Geneva",
       color: "white",
     });
   }
