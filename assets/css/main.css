@@ -18,6 +18,8 @@ main{
 
 #context-ctx{
     font-size: 23px;
+    margin-right: 5%;
+    text-align: justify;
 }
 
 #question{

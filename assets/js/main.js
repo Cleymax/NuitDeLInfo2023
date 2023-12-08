@@ -45,7 +45,6 @@ const opt_click = (e) => {
 }
 
 const newData = (data) => {
-    console.log(data)
   const title = data["titre"];
   const text = data["text"];
   const image = data["image"];
