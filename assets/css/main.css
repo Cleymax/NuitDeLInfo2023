@@ -39,6 +39,10 @@ main{
     list-style: None;
 }
 
+.selected_opt{
+    background-color: #8A2BE2;
+}
+
 #picture{
     border-radius: 45px;
     height: 40rem;
