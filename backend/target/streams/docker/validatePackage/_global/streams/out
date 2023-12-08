@@ -1,0 +1,10 @@
+[0m[[0m[33mwarn[0m] [0m[0m[1] There are no exposed ports for your docker image[0m
+[0m[[0m[33mwarn[0m] [0m[0m Configure the `dockerExposedPorts` or `dockerExposedUdpPorts` setting. E.g.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m // standard tcp ports[0m
+[0m[[0m[33mwarn[0m] [0m[0m dockerExposedPorts ++= Seq(9000, 9001)[0m
+[0m[[0m[33mwarn[0m] [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m // for udp ports[0m
+[0m[[0m[33mwarn[0m] [0m[0m dockerExposedUdpPorts += 4444[0m
+[0m[[0m[33mwarn[0m] [0m[0m          [0m
+[0m[[0m[32msuccess[0m] [0m[0mAll package validations passed[0m

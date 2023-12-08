@@ -1,0 +1,1 @@
+[[{"${BASE}/src/main/resources/data.json":["${BASE}/target/scala-2.13/classes/data.json"]},{"${BASE}/target/scala-2.13/classes/data.json":["${BASE}/src/main/resources/data.json"]}],{"${BASE}/src/main/resources/data.json":{"file":"file:///home/cperrin/Project/Perso/NuitDeLInfo2023/backend/src/main/resources/data.json","lastModified":1702005299113}}]
