@@ -7,3 +7,5 @@ Lien figma : https://www.figma.com/file/GuvCRyFikyeWnNhBICjTqu/No%C3%ABl?type=de
 Lien Maquette Figma : https://www.figma.com/file/GuvCRyFikyeWnNhBICjTqu/No%C3%ABl?type=design&node-id=0%3A1&mode=design&t=he37PlNazpNUf8aF-1
 
 URL de production: https://ndl2023.clementperrin.fr/
+
+C'est un jeu où l'utilisateur est le héros dans l'univers de Noël et de l'urgence climatique.
