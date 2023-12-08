@@ -6,6 +6,7 @@ let yearText;
 let goalText;
 let nextPieceImage;
 let gameOverLetters;
+let winLetters;
 let tryAgnLetters;
 let btnRetry;
 let backgroundMenu;
@@ -30,6 +31,7 @@ class GameScene extends Phaser.Scene {
 
   preload() {
     this.menuGameOver = this.add.group();
+    this.menuWin = this.add.group();
     this.imageGroup = this.add.group();
     this.load.image("background", "./assets/whiteBackground2.png");
     this.load.image("backgroundM", "./assets/whiteBackground2.jpg");
@@ -87,6 +89,9 @@ class GameScene extends Phaser.Scene {
         return;
       }
 
+      if (this.isWin()) {
+        return;
+      }
       this.downCicle();
       map.comboVerify();
       //devArrayText.setText(map.getMap()); //va avec la matrice
@@ -122,13 +127,64 @@ class GameScene extends Phaser.Scene {
   isGameOver() {
     for (var i = 0; i < map.xArrayLength; i++) {
       var value = map.getMapPosition(4, i);
-      if (value == 3 || win == true) {
+      if (value == 3 ) {
         gameOver = true;
         this.drawGameOverScreen();
         return true;
       }
     }
     return false;
+  }
+
+  isWin() {
+    if (win == true ) {
+      win = false;
+      this.drawWinnerScreen();
+      return true;
+    }
+    return false;
+  }
+
+  drawWinnerScreen() {
+    const MENU_WIN_WIDTH = 350;
+    const MENU_WIN_Y = 600;
+
+    winLetters = this.add.text(
+      MENU_WIN_WIDTH / 2 - 20,
+      MENU_WIN_Y + 10,
+      "Félicitation vous \navez perdu votre temps ! ",
+      { font: "bold 35px Geneva", color: "black" }
+    );
+    tryAgnLetters = this.add.text(
+      MENU_WIN_WIDTH / 2,
+      MENU_WIN_Y + 80,
+      "Voulez vous continuez \na perdre votre temps?",
+      { font: "bold 25px Geneva", color: "black" }
+    );
+    backgroundMenu = this.add
+      .rectangle(
+        MAP_WIDTH / 2 - MENU_WIN_WIDTH / 2,
+        580,
+        MENU_WIN_WIDTH,
+        180,
+        0xffffff
+      )
+      .setOrigin(0, 0);
+    btnRetry = this.add
+      .rectangle(MAP_WIDTH / 2 - 125, 670, 250, 50, 0xdedede)
+      .setOrigin(0, 0);
+
+    this.menuWin.add(tryAgnLetters);
+    this.menuWin.add(backgroundMenu);
+    this.menuWin.add(btnRetry);
+    this.menuWin.add(winLetters);
+
+    tryAgnLetters.setInteractive({ useHandCursor: true });
+    tryAgnLetters.on("pointerdown", () => this.restart());
+    // tryAgnLetters.on('pointerover', () => this.restart() );
+    winLetters.setDepth(12);
+    tryAgnLetters.setDepth(12);
+    
   }
 
   drawGameOverScreen() {
@@ -257,7 +313,7 @@ class GameScene extends Phaser.Scene {
     }
     score -= 10;
 
-    if (score < 0) {
+    if (score <= 0) {
       score = 0;
       win = true;
     }
@@ -273,8 +329,8 @@ var config = {
   width: window.innerWidth, // Utilisez la largeur de la fenêtre
   height: window.innerHeight,
   backgroundColor: "#ff0000",
-  // width: "150%",
-  // height: "180%",
+  width: "70%",
+  height: "140%",
   scale: {
     mode: Phaser.Scale.FIT,
     autoCenter: Phaser.Scale.CENTER_BOTH,
